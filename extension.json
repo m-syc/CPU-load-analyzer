@@ -1,0 +1,40 @@
+{
+  "name": "CPU load analyzer",
+  "apiVersion": "1.0.0",
+  "author": "Mateusz Syc",
+  "version": "0.0.1",
+  "description": "",
+  "extensions": {
+    "CPU load monitor": {
+      "type": "DigitalMeasurement",
+      "entryPoint": "CpuLoadMeasurer.CpuLoadMeasurer",
+      "metrics": {
+        "cpu_load_avg": {
+          "name": "Average CPU load",
+          "notation": "CPU load<sub>avg</sub>",
+          "units": "%"
+        },
+        "cpu_load_max": {
+          "name": "Max CPU load",
+          "notation": "CPU load<sub>max</sub>",
+          "units": "%"
+        },
+        "ts_max": {
+          "name": "Max timestamp",
+          "notation": "t<sub>cpuload max</sub>",
+          "units": "s"
+        },
+        "cpu_load_min": {
+          "name": "Min CPU load",
+          "notation": "CPU load<sub>min</sub>",
+          "units": "%"
+        },
+        "ts_min": {
+          "name": "Min timestamp",
+          "notation": "t<sub>cpuload min</sub>",
+          "units": "s"
+        }
+      }
+    }
+  }
+}

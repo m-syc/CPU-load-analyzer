@@ -1,0 +1,4 @@
+First version of CPU load measurement tool is released.
+
+Known issue is calculating the time from frtst analysed rising edge, not the beggining of the measurment of absolute capture time.
+Workaround is proposed in the readme file.
